@@ -1,4 +1,4 @@
 #!/bin/sh -l
 
-cd /github/workspace/cv
+cp /github/workspace/cv/* .
 
