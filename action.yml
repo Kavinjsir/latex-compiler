@@ -1,0 +1,6 @@
+# action.yml
+name: 'cv-creator'
+description: 'Create cover letter pdf from latex'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
