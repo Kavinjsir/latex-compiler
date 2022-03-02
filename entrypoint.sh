@@ -1,4 +1,4 @@
 #!/bin/sh -l
 
-cd cv
+cd cv && xelatex resume.tex && ls
 
