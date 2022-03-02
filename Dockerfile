@@ -24,6 +24,12 @@ RUN apt-get update && \
 # (https://github.community/t/how-can-i-access-the-current-repo-context-and-files-from-a-docker-container-action/17711/2)
 WORKDIR /github/workspace
 
+# Copies your code file from your action repository to the filesystem path `/` of the container
+COPY entrypoint.sh /entrypoint.sh
+
+# Code file to execute when the docker container starts up (`entrypoint.sh`)
+ENTRYPOINT ["/entrypoint.sh"]
+
 CMD ["xelatex", "resume.tex"]
 
 # WORKDIR /data
