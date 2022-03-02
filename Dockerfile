@@ -24,7 +24,7 @@ RUN apt-get update && \
 # (https://github.community/t/how-can-i-access-the-current-repo-context-and-files-from-a-docker-container-action/17711/2)
 WORKDIR /github/workspace
 
-CMD ["xelatex", "resume.tex"]
+CMD ["cd", "cv", "&&", "xelatex", "resume.tex"]
 
 # WORKDIR /data
 # VOLUME ["/data"]
